@@ -62,4 +62,5 @@
 
 ### ---- Executar os testes com report / screenshots / html ----
 > npm run cy:run
+
 > npm run cy:report
