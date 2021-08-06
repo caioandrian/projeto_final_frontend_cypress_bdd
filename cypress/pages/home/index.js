@@ -16,13 +16,13 @@ export class Home extends Base{
         
         if(super.getElement(el.POPUP_INFO_PROD.ARRAY_BOX_VARIANTES)
             .then((elem) => {
-                if(elem.length === 4){
+                if(elem.length === 3){
                     super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, 0).then((seletor2) => {
                         let valorOption = seletor2[0][2].outerText
                         super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 0)
                     })
                 }
-                if(elem.length === 5){
+                if(elem.length === 4){
                     super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, 1).then((seletor2) => {
                         let valorOption = seletor2[0][2].outerText
                         super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 1)

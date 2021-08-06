@@ -37,7 +37,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 5241000000
+              "duration": 15625000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1588000000
+              "duration": 1784000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "preencher os campos com \"NomeInválido\" para \"realizar um novo cadastro\"",
             "result": {
               "status": "passed",
-              "duration": 6169000000
+              "duration": 6242000000
             }
           },
           {
@@ -67,7 +67,7 @@
             "name": "deverá apresentar a mensagem \"Digite o seu nome completo, por favor.\" para o cadastro ou login do usuário",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 70000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1170000000
+              "duration": 1503000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1629000000
+              "duration": 1773000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "preencher os campos com \"cpfInválido\" para \"realizar um novo cadastro\"",
             "result": {
               "status": "passed",
-              "duration": 8000000000
+              "duration": 8286000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "deverá apresentar a mensagem \"Para prosseguir com o cadastro, por favor, informe um CPF válido.\" para o cadastro ou login do usuário",
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 71000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "deverá ser \"\" para a página minha conta",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 25000000
             }
           }
         ]
@@ -175,7 +175,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 3885000000
+              "duration": 1594000000
             }
           },
           {
@@ -185,7 +185,7 @@
             "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1632000000
+              "duration": 1902000000
             }
           },
           {
@@ -195,7 +195,7 @@
             "name": "preencher os campos com \"celularInválido\" para \"realizar um novo cadastro\"",
             "result": {
               "status": "passed",
-              "duration": 8570000000
+              "duration": 6191000000
             }
           },
           {
@@ -205,7 +205,7 @@
             "name": "deverá apresentar a mensagem \"O telefone deve ter 10 digitos DDD + telefone!\" para o cadastro ou login do usuário",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 70000000
             }
           },
           {
@@ -244,7 +244,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1075000000
+              "duration": 1504000000
             }
           },
           {
@@ -254,7 +254,7 @@
             "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1679000000
+              "duration": 1801000000
             }
           },
           {
@@ -264,7 +264,7 @@
             "name": "preencher os campos com \"válidos\" para \"realizar um novo cadastro\"",
             "result": {
               "status": "passed",
-              "duration": 11433000000
+              "duration": 10790000000
             }
           },
           {
@@ -284,7 +284,7 @@
             "name": "deverá ser \"sim\" para a página minha conta",
             "result": {
               "status": "passed",
-              "duration": 3671000000
+              "duration": 3476000000
             }
           }
         ]
@@ -313,7 +313,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1441000000
+              "duration": 1564000000
             }
           },
           {
@@ -323,7 +323,7 @@
             "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1677000000
+              "duration": 1543000000
             }
           },
           {
@@ -333,7 +333,7 @@
             "name": "que esteja com um usuário \"cadastroInválido\"",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 22000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "preencher os campos com \"emailInválido\" para \"acessar a aplicação\"",
             "result": {
               "status": "passed",
-              "duration": 890000000
+              "duration": 907000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "deverá apresentar a mensagem \"Dados inválidos, digite novamente!\" para o cadastro ou login do usuário",
             "result": {
               "status": "passed",
-              "duration": 47000000
+              "duration": 49000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "deverá ser \"\" para a página minha conta",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 19000000
             }
           }
         ]
@@ -392,7 +392,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1430000000
+              "duration": 1242000000
             }
           },
           {
@@ -402,7 +402,7 @@
             "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1826000000
+              "duration": 1860000000
             }
           },
           {
@@ -412,7 +412,7 @@
             "name": "que esteja com um usuário \"cadastroInválido\"",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 20000000
             }
           },
           {
@@ -422,7 +422,7 @@
             "name": "preencher os campos com \"senhaInválida\" para \"acessar a aplicação\"",
             "result": {
               "status": "passed",
-              "duration": 1532000000
+              "duration": 1635000000
             }
           },
           {
@@ -432,7 +432,7 @@
             "name": "deverá apresentar a mensagem \"Autenticação incorreta.\" para o cadastro ou login do usuário",
             "result": {
               "status": "passed",
-              "duration": 250000000
+              "duration": 247000000
             }
           },
           {
@@ -442,7 +442,7 @@
             "name": "deverá ser \"\" para a página minha conta",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 20000000
             }
           }
         ]
@@ -471,7 +471,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1231000000
+              "duration": 1569000000
             }
           },
           {
@@ -481,7 +481,7 @@
             "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1853000000
+              "duration": 1897000000
             }
           },
           {
@@ -491,7 +491,7 @@
             "name": "que esteja com um usuário \"cadastroVálido\"",
             "result": {
               "status": "passed",
-              "duration": 16020000000
+              "duration": 15833000000
             }
           },
           {
@@ -501,7 +501,7 @@
             "name": "preencher os campos com \"válidos\" para \"acessar a aplicação\"",
             "result": {
               "status": "passed",
-              "duration": 2028000000
+              "duration": 2297000000
             }
           },
           {
@@ -511,7 +511,7 @@
             "name": "deverá apresentar a mensagem \"\" para o cadastro ou login do usuário",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 20000000
             }
           },
           {
@@ -521,7 +521,7 @@
             "name": "deverá ser \"sim\" para a página minha conta",
             "result": {
               "status": "passed",
-              "duration": 6761000000
+              "duration": 6942000000
             }
           }
         ]

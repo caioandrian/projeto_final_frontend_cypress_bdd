@@ -14,7 +14,7 @@ export const ELEMENTS = {
         DIMINUIR_QTDE: "div[class='increment-page'] > div",
         AUMENTAR_QTDE: "div[class='increment-page'] > div + div",
         SELECT_VARIANTES: '.box-info > form > div > select',
-        ARRAY_BOX_VARIANTES: ".box-info > form > div"
+        ARRAY_BOX_VARIANTES: ".box-info > form > div +"
     },
     CARRINHO_LATERAL:{
         DIV: '.cart-sidebar',
