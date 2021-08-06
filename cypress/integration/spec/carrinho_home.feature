@@ -1,7 +1,7 @@
 #language: pt
 
 @funcionalidade_carrinho
-Funcionalidade: Carrinho Janela Lateral
+Funcionalidade: Visualização Rápida do Carrinho
     Como cliente do site manetzeetech
     Quero adicionar items no meu carrinho
     e editar os produtos dentro dele usando a janela lateral na página home

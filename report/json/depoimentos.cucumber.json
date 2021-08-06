@@ -37,7 +37,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 23148000000
+              "duration": 2209000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "visualizar a seção \"o que os clientes estão dizendo\"",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 10000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "deverá ser exibido pelo menos um depoimento do cliente manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 44000000
+              "duration": 65000000
             }
           }
         ]
@@ -86,7 +86,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 983000000
+              "duration": 1408000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "acessar a página de depoimentos",
             "result": {
               "status": "passed",
-              "duration": 4033000000
+              "duration": 4753000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "deverão ser exibidos todos os \"Depoimentos\" cadastrados pelos clientes da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 113000000
+              "duration": 87000000
             }
           }
         ]
@@ -135,7 +135,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1205000000
+              "duration": 1159000000
             }
           },
           {
@@ -145,7 +145,7 @@
             "name": "acessar a página de depoimentos",
             "result": {
               "status": "passed",
-              "duration": 3031000000
+              "duration": 3866000000
             }
           },
           {
@@ -155,7 +155,7 @@
             "name": "cadastrar um novo depoimento usando credenciais \"inválidas\" no site da manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 891000000
+              "duration": 595000000
             }
           },
           {
@@ -165,7 +165,7 @@
             "name": "deverá retornar a mensagem \"de erro\"",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 4000000
             }
           }
         ]

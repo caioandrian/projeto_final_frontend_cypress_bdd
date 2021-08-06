@@ -37,7 +37,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1856000000
+              "duration": 3617000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "que tenha ao menos um produto adicionado ao carrinho",
             "result": {
               "status": "passed",
-              "duration": 394000000
+              "duration": 787000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "seja um cliente PF da manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 14000000
             }
           },
           {
@@ -67,7 +67,7 @@
             "name": "tenha acessado a página de checkout",
             "result": {
               "status": "passed",
-              "duration": 5497000000
+              "duration": 5370000000
             }
           },
           {
@@ -77,7 +77,7 @@
             "name": "preencher todas as informações úteis para que seja feito o pedido",
             "result": {
               "status": "failed",
-              "duration": 35714000000,
+              "duration": 36932000000,
               "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#payment-form`, but never found it.\n    at Function.verifyIfElementIsVisible (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:835:55)\n    at Function.pagamentoComBoleto (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:1036:107)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:321:22)\n    at Context.resolveAndRunStepDefinition (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:12211:9)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:11529:35)"
             }
           },
