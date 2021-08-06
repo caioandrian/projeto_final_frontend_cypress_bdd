@@ -37,7 +37,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 2418000000
+              "duration": 5226000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "adicionar no carrinho 1 produtos da seção Novidades",
             "result": {
               "status": "passed",
-              "duration": 913000000
+              "duration": 711000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "o carrinho deverá ter 1 produtos adicionados",
             "result": {
               "status": "passed",
-              "duration": 398000000
+              "duration": 433000000
             }
           }
         ]
@@ -86,7 +86,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1202000000
+              "duration": 697000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "adicionar no carrinho 2 produtos da seção Novidades",
             "result": {
               "status": "passed",
-              "duration": 5143000000
+              "duration": 2606000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "o carrinho deverá ter 2 produtos adicionados",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 35000000
             }
           }
         ]
@@ -135,7 +135,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 933000000
+              "duration": 766000000
             }
           },
           {
@@ -145,7 +145,7 @@
             "name": "adicionar no carrinho 3 produtos da seção Novidades",
             "result": {
               "status": "passed",
-              "duration": 6310000000
+              "duration": 3730000000
             }
           },
           {
@@ -155,7 +155,7 @@
             "name": "o carrinho deverá ter 3 produtos adicionados",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 38000000
             }
           }
         ]
@@ -184,7 +184,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1046000000
+              "duration": 752000000
             }
           },
           {
@@ -194,7 +194,7 @@
             "name": "que tenha ao menos um produto adicionado ao carrinho",
             "result": {
               "status": "passed",
-              "duration": 1408000000
+              "duration": 648000000
             }
           },
           {
@@ -204,7 +204,7 @@
             "name": "remover o primeiro produto do carrinho usando a janela lateral da página home",
             "result": {
               "status": "passed",
-              "duration": 669000000
+              "duration": 551000000
             }
           },
           {
@@ -214,7 +214,7 @@
             "name": "o carrinho deverá ter 0 produtos adicionados",
             "result": {
               "status": "passed",
-              "duration": 339000000
+              "duration": 263000000
             }
           }
         ]
@@ -243,7 +243,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 1147000000
+              "duration": 764000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "adicionar 4 items do mesmo produto da seção Novidades no carrinho",
             "result": {
               "status": "passed",
-              "duration": 2071000000
+              "duration": 812000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "o carrinho deverá ter 4 items do produto adicionado",
             "result": {
               "status": "passed",
-              "duration": 412000000
+              "duration": 377000000
             }
           }
         ]

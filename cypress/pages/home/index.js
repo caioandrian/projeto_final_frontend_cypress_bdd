@@ -86,7 +86,7 @@ export class Home extends Base{
 
     static validarQuantidadeProdutosNoCarrinho(quantidade){
         if(quantidade === 0){
-            super.verifyIfPageContainingTextVisible(el.CARRINHO_LATERAL.TXT_CARRINHO_VAZIO)
+            super.validateTextElement(el.CARRINHO_LATERAL.DIV_MSG_CARRINHO, el.CARRINHO_LATERAL.TXT_CARRINHO_VAZIO)
         }else{
             super.validateElementLenght(el.CARRINHO_LATERAL.PRODUTOS, quantidade, "=")
         }

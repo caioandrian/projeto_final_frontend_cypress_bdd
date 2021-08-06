@@ -37,7 +37,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 2329000000
+              "duration": 5299000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "procurar um produto por \"NOTEBOOK\"",
             "result": {
               "status": "passed",
-              "duration": 2851000000
+              "duration": 2652000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "deverá apresentar o \"NOTEBOOK\" na página de resultado",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 39000000
             }
           },
           {
@@ -67,7 +67,7 @@
             "name": "deverá apresentar a página de resultado com o conteúdo \"lista_de_produtos\"",
             "result": {
               "status": "passed",
-              "duration": 44000000
+              "duration": 52000000
             }
           }
         ]
@@ -96,7 +96,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 803000000
+              "duration": 759000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "procurar um produto por \"*_)~~''DSA235235\"",
             "result": {
               "status": "passed",
-              "duration": 3200000000
+              "duration": 2923000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "deverá apresentar o \"\" na página de resultado",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 10000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "deverá apresentar a página de resultado com o conteúdo \"Nenhum Produto Encontrado.\"",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 41000000
             }
           }
         ]
@@ -155,7 +155,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 736000000
+              "duration": 1009000000
             }
           },
           {
@@ -165,7 +165,7 @@
             "name": "selecionar a categoria \"Telefonia\"",
             "result": {
               "status": "passed",
-              "duration": 1287000000
+              "duration": 2004000000
             }
           },
           {
@@ -175,7 +175,7 @@
             "name": "deverá apresentar o \"Telefonia\" na página de resultado",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 35000000
             }
           },
           {
@@ -185,7 +185,7 @@
             "name": "deverá apresentar a página de resultado com o conteúdo \"lista_de_produtos\"",
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 64000000
             }
           }
         ]
@@ -214,7 +214,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 861000000
+              "duration": 1017000000
             }
           },
           {
@@ -224,7 +224,7 @@
             "name": "selecionar a categoria \"Eletrônicos\"",
             "result": {
               "status": "passed",
-              "duration": 1482000000
+              "duration": 1852000000
             }
           },
           {
@@ -234,7 +234,7 @@
             "name": "deverá apresentar o \"Eletrônicos\" na página de resultado",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 36000000
             }
           },
           {
@@ -244,7 +244,7 @@
             "name": "deverá apresentar a página de resultado com o conteúdo \"lista_de_produtos\"",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 51000000
             }
           }
         ]
@@ -273,7 +273,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 986000000
+              "duration": 3100000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "selecionar a categoria \"Smatwatch\"",
             "result": {
               "status": "passed",
-              "duration": 1893000000
+              "duration": 1790000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "deverá apresentar o \"Smatwatch\" na página de resultado",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 33000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "deverá apresentar a página de resultado com o conteúdo \"lista_de_produtos\"",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 48000000
             }
           }
         ]
@@ -332,7 +332,7 @@
             "name": "que esteja na página home da loja manetzeetech",
             "result": {
               "status": "passed",
-              "duration": 764000000
+              "duration": 1041000000
             }
           },
           {
@@ -342,7 +342,7 @@
             "name": "escolher o primeiro produto em destaque",
             "result": {
               "status": "passed",
-              "duration": 190000000
+              "duration": 205000000
             }
           },
           {
@@ -352,7 +352,7 @@
             "name": "deverá apresentar as informações do produto na janela flutuante",
             "result": {
               "status": "passed",
-              "duration": 155000000
+              "duration": 967000000
             }
           }
         ]

@@ -24,6 +24,7 @@ export const ELEMENTS = {
         PRODUTOS: '.box-cart',
         //FN_BTN_REMOVER_PRODUTO: (posicao) => `[data-id=${posicao}]`
         BTN_REMOVER_PRODUTO: '.remove',
+        DIV_MSG_CARRINHO: "div[class='error'] > div",
         TXT_CARRINHO_VAZIO: 'Carrinho Vazio',
         QTDE_PRODUTO: '.qnt'
     }

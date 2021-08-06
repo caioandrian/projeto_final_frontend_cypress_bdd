@@ -9,7 +9,9 @@ export const ELEMENTS = {
         EMAIL: "#input-email",
         BTN_CONTINUAR: "#tray-login-identify",
         SENHA: "#input-password",
-        BTN_CONFIRMAR: "#password-submit"
+        BTN_CONFIRMAR: "#password-submit",
+        SPAN_MSG_ERRO: ".tray-error-message",
+        BOX_MSGS_ERRO: ".tray-feedbacks"
     },
     FORM_CADASTRO_PF: {
         BOX: "#fisica",
@@ -20,6 +22,9 @@ export const ELEMENTS = {
         EMAIL2: '#email_cliente2',
         SENHA: '#senha_cliente',
         SENHA2: '#senha_cliente2',
-        BTN_CONFIRMAR: '.termContainerRegister > .botao-commerce'
+        BTN_CONFIRMAR: '.termContainerRegister > .botao-commerce',
+        SPAN_MSG_NOME_ERRO: "#pf_nome_cliente_erro",
+        SPAN_MSG_CPF_ERRO: "#pf_cpf_cliente_erro",
+        SPAN_MSG_CELULAR_ERRO: "#telefone_cliente_2_erro"
     }
 }

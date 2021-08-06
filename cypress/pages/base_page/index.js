@@ -17,33 +17,6 @@ export default class Base {
         return elem;
     }
 
-    static getElementWithOption(element, index = undefined, scrollIntoView = false) {
-        let elem;
-
-        if (typeof index !== 'undefined' || index > 0) {
-            if(!scrollIntoView)
-                elem = cy.get(element + " option", { timeout: Cypress.env('global_timeout') }).eq(index)
-            else
-                elem = cy.get(element + " option", { timeout: Cypress.env('global_timeout') }).eq(index).scrollIntoView();
-        } else {
-            if(!scrollIntoView)
-                elem = cy.get(element + " option", { timeout: Cypress.env('global_timeout') })
-            else
-                elem = cy.get(element + " option", { timeout: Cypress.env('global_timeout') }).scrollIntoView()
-        }
-        return elem;
-    }
-
-    static verifyIfPageContainingTextVisible(text, scrollIntoView = false) {
-        if(!scrollIntoView)
-            return cy.contains(text, { timeout: Cypress.env('global_timeout') })
-                .should('be.visible')
-        else
-            return cy.contains(text, { timeout: Cypress.env('global_timeout') }).scrollIntoView()
-                .should('be.visible')
-    }
-
-
     static getElementByXPath(element, index = undefined, scrollIntoView = false) {
         let elem;
 
@@ -214,9 +187,18 @@ export default class Base {
 
     static validateTextElement(element, texto, index = undefined, scrollIntoView = false){
         if(texto)
-            this.getElement(element, index, scrollIntoView).should('have.text', texto)
+            this.getElement(element, index, scrollIntoView).invoke('text').then(($el) => {
+                expect($el.trim()).equal(texto)
+            })
         else
             this.getElement(element, index, scrollIntoView).should('not.be.empty')
+    }
+
+    static validateTextExistOnPage(texto, scrollIntoView = false){
+        if(!scrollIntoView)
+            cy.contains(texto).should('to.be.visible', { timeout: Cypress.env('global_timeout') })
+        else
+            cy.contains(texto).scrollIntoView().should('to.be.visible', { timeout: Cypress.env('global_timeout') })
     }
 
     static verifyIfElementExists(element, index = undefined, scrollIntoView = false) {
