@@ -12,7 +12,7 @@
 - Ver Produto
 
 **Autenticação**
-- Login **(esquema de cenário)**
+- Login **(esquema de cenário)** 
 - Cadastro **(esquema de cenário)** **(com faker )** 
 
 **Carrinho**
@@ -39,7 +39,7 @@
 ##### Com Intercept:
 - não (a fazer)
 ##### Massa de Dados Fixas (json / cy.fixture):
-- não (a fazer)
+- sim (validação de erros autenticação)
 ##### Dockerfile & Jenkinsfile:
 - rodando localmente (mas pode apresentar erro no site "403 Access Forbidden by CSRFProtector!")
 
