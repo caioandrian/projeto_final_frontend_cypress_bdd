@@ -1,0 +1,97 @@
+[
+  {
+    "description": "    Como cliente do site manetzeetech\n    Quero finalizar pedidos de compra no site",
+    "keyword": "Funcionalidade",
+    "name": "Pedido",
+    "line": 4,
+    "id": "pedido",
+    "tags": [
+      {
+        "name": "@funcionalidade_pedido",
+        "line": 3
+      }
+    ],
+    "uri": "pedido.feature",
+    "elements": [
+      {
+        "id": "pedido;finalizar-pedido",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Finalizar Pedido",
+        "tags": [
+          {
+            "name": "@funcionalidade_pedido",
+            "line": 3
+          },
+          {
+            "name": "@pedido_finalizar_pedido",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1856000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "que tenha ao menos um produto adicionado ao carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 394000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 11,
+            "name": "seja um cliente PF da manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "tenha acessado a página de checkout",
+            "result": {
+              "status": "passed",
+              "duration": 5497000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 16,
+            "name": "preencher todas as informações úteis para que seja feito o pedido",
+            "result": {
+              "status": "failed",
+              "duration": 35714000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#payment-form`, but never found it.\n    at Function.verifyIfElementIsVisible (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:835:55)\n    at Function.pagamentoComBoleto (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:1036:107)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:321:22)\n    at Context.resolveAndRunStepDefinition (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:12211:9)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\pedido.feature:11529:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 17,
+            "name": "deverá registrado o pedido do cliente",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

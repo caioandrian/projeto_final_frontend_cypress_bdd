@@ -1,0 +1,175 @@
+[
+  {
+    "description": "    Como cliente do site manetzeetech\n    Quero ver os depoimentos de outros clientes\n    e quero deixar registrado meu depoimento",
+    "keyword": "Funcionalidade",
+    "name": "Depoimentos",
+    "line": 4,
+    "id": "depoimentos",
+    "tags": [
+      {
+        "name": "@funcionalidade_depoimentos",
+        "line": 3
+      }
+    ],
+    "uri": "depoimentos.feature",
+    "elements": [
+      {
+        "id": "depoimentos;depoimentos-em-destaque",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Depoimentos em destaque",
+        "tags": [
+          {
+            "name": "@funcionalidade_depoimentos",
+            "line": 3
+          },
+          {
+            "name": "@depoimentos_em_destaques",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 23148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "visualizar a seção \"o que os clientes estão dizendo\"",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "deverá ser exibido pelo menos um depoimento do cliente manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "depoimentos;ver-todos-os-depoimentos",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Ver todos os depoimentos",
+        "tags": [
+          {
+            "name": "@funcionalidade_depoimentos",
+            "line": 3
+          },
+          {
+            "name": "@ver_depoimentos",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 983000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 20,
+            "name": "acessar a página de depoimentos",
+            "result": {
+              "status": "passed",
+              "duration": 4033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 21,
+            "name": "deverão ser exibidos todos os \"Depoimentos\" cadastrados pelos clientes da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "depoimentos;cadastrar-um-novo-depoimento",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Cadastrar um novo depoimento",
+        "tags": [
+          {
+            "name": "@funcionalidade_depoimentos",
+            "line": 3
+          },
+          {
+            "name": "@ver_depoimentos",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1205000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 25,
+            "name": "acessar a página de depoimentos",
+            "result": {
+              "status": "passed",
+              "duration": 3031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 26,
+            "name": "cadastrar um novo depoimento usando credenciais \"inválidas\" no site da manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 891000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 27,
+            "name": "deverá retornar a mensagem \"de erro\"",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

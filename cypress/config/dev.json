@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://lojadetestetemanetzeetech.commercesuite.com.br", 
+    "env":{
+        "global_timeout": 30000,
+        "environment": "dev.json"
+    }
+}

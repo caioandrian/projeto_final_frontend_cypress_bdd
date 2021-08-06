@@ -1,0 +1,126 @@
+[
+  {
+    "description": "    Como cliente do site manetzeetech\n    Quero adicionar items no meu carrinho\n    e editar os produtos dentro dele",
+    "keyword": "Funcionalidade",
+    "name": "Carrinho Lateral",
+    "line": 4,
+    "id": "carrinho-lateral",
+    "tags": [
+      {
+        "name": "@funcionalidade_carrinho",
+        "line": 3
+      }
+    ],
+    "uri": "carrinho.feature",
+    "elements": [
+      {
+        "id": "carrinho-lateral;adicionar-produto(s)-no-carrinho",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Adicionar Produto(s) no Carrinho",
+        "tags": [
+          {
+            "name": "@funcionalidade_carrinho",
+            "line": 3
+          },
+          {
+            "name": "@carrinho_adicionar_produto",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1239000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "adicionar no carrinho o primeiro produto que aparece em novidades",
+            "result": {
+              "status": "failed",
+              "duration": 60864000000,
+              "error_message": "AssertionError: Timed out retrying after 50000ms: expected '<div.modal-content>' to be 'visible'\n\nThis element `<div.modal-content>` is not visible because its parent `<div#implantation-store-modal.ls-modal.modal.fade>` has CSS property: `display: none`\n    at Function.clickOnElementByFind_InsideAnotherElement (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\carrinho.feature:559:32)\n    at Function.fecharModalAlert (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\carrinho.feature:863:113)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\carrinho.feature:213:22)\n    at Context.resolveAndRunStepDefinition (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\carrinho.feature:11897:9)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\carrinho.feature:11215:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "deverá aparecer esse produto na página do meu carrinho",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "carrinho-lateral;retirar-produto(s)-do-carrinho",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Retirar Produto(s) do Carrinho",
+        "tags": [
+          {
+            "name": "@funcionalidade_carrinho",
+            "line": 3
+          },
+          {
+            "name": "@carrinho_remover_produto",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1993000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 20,
+            "name": "que tenha ao menos um produto adicionado ao carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 21,
+            "name": "remover um ou mais produtos do carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 22,
+            "name": "deverá reduzir o número de produtos que aparecem em meu carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

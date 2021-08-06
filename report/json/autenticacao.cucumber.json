@@ -1,0 +1,531 @@
+[
+  {
+    "description": "    Como cliente do site manetzeetech\n    Quero realizar meu cadastro e login para ter acesso na aplicação",
+    "keyword": "Funcionalidade",
+    "name": "Autenticação",
+    "line": 4,
+    "id": "autenticação",
+    "tags": [
+      {
+        "name": "@funcionalidade_autenticacao",
+        "line": 3
+      }
+    ],
+    "uri": "autenticacao.feature",
+    "elements": [
+      {
+        "id": "autenticação;cadastrar-novo-usuário",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Cadastrar novo usuário",
+        "tags": [
+          {
+            "name": "@funcionalidade_autenticacao",
+            "line": 3
+          },
+          {
+            "name": "@cadastro_usuario",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 5241000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1588000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "preencher os campos com \"NomeInválido\" para \"realizar um novo cadastro\"",
+            "result": {
+              "status": "passed",
+              "duration": 6169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "deverá apresentar a mensagem \"Digite o seu nome completo, por favor.\" para o cadastro ou login do usuário",
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "deverá ser \"\" para a página minha conta",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "autenticação;cadastrar-novo-usuário",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Cadastrar novo usuário",
+        "tags": [
+          {
+            "name": "@funcionalidade_autenticacao",
+            "line": 3
+          },
+          {
+            "name": "@cadastro_usuario",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1629000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "preencher os campos com \"cpfInválido\" para \"realizar um novo cadastro\"",
+            "result": {
+              "status": "passed",
+              "duration": 8000000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "deverá apresentar a mensagem \"Para prosseguir com o cadastro, por favor, informe um CPF válido.\" para o cadastro ou login do usuário",
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "deverá ser \"\" para a página minha conta",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "autenticação;cadastrar-novo-usuário",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Cadastrar novo usuário",
+        "tags": [
+          {
+            "name": "@funcionalidade_autenticacao",
+            "line": 3
+          },
+          {
+            "name": "@cadastro_usuario",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 3885000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1632000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "preencher os campos com \"celularInválido\" para \"realizar um novo cadastro\"",
+            "result": {
+              "status": "passed",
+              "duration": 8570000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "deverá apresentar a mensagem \"O telefone deve ter 10 digitos DDD + telefone!\" para o cadastro ou login do usuário",
+            "result": {
+              "status": "passed",
+              "duration": 64000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "deverá ser \"\" para a página minha conta",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "autenticação;cadastrar-novo-usuário",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Cadastrar novo usuário",
+        "tags": [
+          {
+            "name": "@funcionalidade_autenticacao",
+            "line": 3
+          },
+          {
+            "name": "@cadastro_usuario",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1075000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1679000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "preencher os campos com \"válidos\" para \"realizar um novo cadastro\"",
+            "result": {
+              "status": "passed",
+              "duration": 11433000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 15,
+            "name": "deverá apresentar a mensagem \"\" para o cadastro ou login do usuário",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "deverá ser \"sim\" para a página minha conta",
+            "result": {
+              "status": "passed",
+              "duration": 3671000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "autenticação;login-do-usuário",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Login do usuário",
+        "tags": [
+          {
+            "name": "@funcionalidade_autenticacao",
+            "line": 3
+          },
+          {
+            "name": "@login_usuario",
+            "line": 25
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 27,
+            "name": "que esteja com um usuário \"cadastroInválido\"",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "preencher os campos com \"emailInválido\" para \"acessar a aplicação\"",
+            "result": {
+              "status": "passed",
+              "duration": 890000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 29,
+            "name": "deverá apresentar a mensagem \"Dados inválidos, digite novamente!\" para o cadastro ou login do usuário",
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 30,
+            "name": "deverá ser \"\" para a página minha conta",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "autenticação;login-do-usuário",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Login do usuário",
+        "tags": [
+          {
+            "name": "@funcionalidade_autenticacao",
+            "line": 3
+          },
+          {
+            "name": "@login_usuario",
+            "line": 25
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1430000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1826000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 27,
+            "name": "que esteja com um usuário \"cadastroInválido\"",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "preencher os campos com \"senhaInválida\" para \"acessar a aplicação\"",
+            "result": {
+              "status": "passed",
+              "duration": 1532000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 29,
+            "name": "deverá apresentar a mensagem \"Autenticação incorreta.\" para o cadastro ou login do usuário",
+            "result": {
+              "status": "passed",
+              "duration": 250000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 30,
+            "name": "deverá ser \"\" para a página minha conta",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "autenticação;login-do-usuário",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Login do usuário",
+        "tags": [
+          {
+            "name": "@funcionalidade_autenticacao",
+            "line": 3
+          },
+          {
+            "name": "@login_usuario",
+            "line": 25
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que esteja na página home da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1231000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "tenha acessado a página de login e cadastro da loja manetzeetech",
+            "result": {
+              "status": "passed",
+              "duration": 1853000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 27,
+            "name": "que esteja com um usuário \"cadastroVálido\"",
+            "result": {
+              "status": "passed",
+              "duration": 16020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "preencher os campos com \"válidos\" para \"acessar a aplicação\"",
+            "result": {
+              "status": "passed",
+              "duration": 2028000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 29,
+            "name": "deverá apresentar a mensagem \"\" para o cadastro ou login do usuário",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 30,
+            "name": "deverá ser \"sim\" para a página minha conta",
+            "result": {
+              "status": "passed",
+              "duration": 6761000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
