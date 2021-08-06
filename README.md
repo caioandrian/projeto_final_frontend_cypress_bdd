@@ -40,8 +40,8 @@
 - não (a fazer)
 ##### Massa de Dados Fixas (json / cy.fixture):
 - não (a fazer)
-##### Dockerfile & Jenkins:
-- sim (mas possivelmente com erro, pode ser do site..)
+##### Dockerfile & Jenkinsfile:
+- rodando localmente (mas pode apresentar erro no site "403 Access Forbidden by CSRFProtector!")
 
 ### ---- Lista de dependências ----
 
@@ -60,7 +60,8 @@
 ### ---- Executar os testes com interface gráfica do cypress ----
 > npm run cy:open
 
-### ---- Executar os testes com report / screenshots / html ----
+### ---- Gerar reports json / screenshots ----
 > npm run cy:run
 
+### ---- Gerar reports html a partir do report json ----
 > npm run cy:report
