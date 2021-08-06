@@ -40,6 +40,8 @@
 - não (a fazer)
 ##### Massa de Dados Fixas (json / cy.fixture):
 - não (a fazer)
+##### Dockerfile & Jenkins:
+- sim (mas possivelmente com erro, pode ser do site..)
 
 ### ---- Lista de dependências ----
 
