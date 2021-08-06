@@ -54,14 +54,14 @@
     "faker-br": "^0.4.1",
     "multiple-cucumber-html-reporter": "^1.18.0" }
 
-### ---- Instalar dependências via node ----
+**Instalar dependências via node**
 > npm install
 
-### ---- Executar os testes com interface gráfica do cypress ----
+**Executar os testes com interface gráfica do cypress**
 > npm run cy:open
 
-### ---- Gerar reports json / screenshots ----
+**Gerar reports json / screenshots**
 > npm run cy:run
 
-### ---- Gerar reports html a partir do report json ----
+**Gerar reports html a partir do report json**
 > npm run cy:report
