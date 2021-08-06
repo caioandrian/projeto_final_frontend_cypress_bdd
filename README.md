@@ -60,5 +60,6 @@
 ### ---- Executar os testes com interface gráfica do cypress ----
 > npm run cy:open
 
-### ---- Executar os testes com report / screenshots ----
+### ---- Executar os testes com report / screenshots / html ----
 > npm run cy:run
+> npm run cy:report
