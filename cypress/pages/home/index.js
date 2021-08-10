@@ -14,23 +14,38 @@ export class Home extends Base{
 
     static editarVariantesDoProduto(quantidade = 1, operador = ""){
         
+        //SELECIONAR VARIANTES DO MESMO (COR, TAMANHO, VOLTAGEM.. ETC)
         if(super.getElement(el.POPUP_INFO_PROD.ARRAY_BOX_VARIANTES)
             .then((elem) => {
+
+                //VERIFICA SE A DIV QUE CONTÉM AS VARIANTES ESTÁ APRESENTANDO SELETORES PARA ESCOLHA
+                //APENAS UM SELETOR
                 if(elem.length === 3){
                     super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, 0).then((seletor2) => {
                         let valorOption = seletor2[0][2].outerText
                         super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 0)
                     })
                 }
+
+                //DOIS SELETORES
                 if(elem.length === 4){
                     super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, 1).then((seletor2) => {
                         let valorOption = seletor2[0][2].outerText
                         super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 1)
                     })
                 }
+
+                //TRÊS SELETORES
+                if(elem.length >= 5){
+                    super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, 2).then((seletor2) => {
+                        let valorOption = seletor2[0][2].outerText
+                        super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 1)
+                    })
+                }
             })
         )
-            
+        
+        //ADICIONAR MAIS ITEMS DO MESMO PRODUTO
         if(quantidade >= 1){
             for(let i = 1; i < quantidade; i++)
                 if(operador === ">")
@@ -63,12 +78,6 @@ export class Home extends Base{
         super.verifyIfElementIsVisible(el.CARRINHO_LATERAL.DIV)
         super.clickOnElement(el.CARRINHO_LATERAL.BTN_FINALIZAR_PEDIDO)
     }
-
-    /*static irParaPaginaDoMeuCarrinho(){
-        super.verifyIfElementIsVisible(el.CARRINHO_LATERAL.DIV)
-        super.validateElementLenght(el.CARRINHO_LATERAL.PRODUTOS, 1, ">=")
-        super.clickOnElement(el.CARRINHO_LATERAL.BTN_MEU_CARRINHO, 0)
-    }*/
 
     static carrinhoLateralContinuarComprando(){
         super.clickOnElementByFind_InsideAnotherElement(el.CARRINHO_LATERAL.DIV, el.CARRINHO_LATERAL.BTN_VOLTAR)

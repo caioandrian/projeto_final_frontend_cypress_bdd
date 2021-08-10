@@ -25,6 +25,8 @@ export const ELEMENTS = {
         BTN_CONFIRMAR: '.termContainerRegister > .botao-commerce',
         SPAN_MSG_NOME_ERRO: "#pf_nome_cliente_erro",
         SPAN_MSG_CPF_ERRO: "#pf_cpf_cliente_erro",
-        SPAN_MSG_CELULAR_ERRO: "#telefone_cliente_2_erro"
+        SPAN_MSG_CELULAR_ERRO: "#telefone_cliente_erro_2",
+        SPAN_MSG_ERRO_TELEFONES_EM_BRANCO: "#telefone_cliente_2_erro",
+        BLOCO_ALERTA: ".container2 > .blocoAlerta"
     }
 }

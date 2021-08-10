@@ -188,10 +188,10 @@ export default class Base {
     static validateTextElement(element, texto, index = undefined, scrollIntoView = false){
         if(texto)
             this.getElement(element, index, scrollIntoView).invoke('text').then(($el) => {
-                expect($el.trim()).equal(texto)
+                expect($el.trim()).contains(texto)
             })
-        else
-            this.getElement(element, index, scrollIntoView).should('not.be.empty')
+        /*else
+            this.getElement(element, index, scrollIntoView).should('not.be.empty')*/
     }
 
     static validateTextExistOnPage(texto, scrollIntoView = false){
@@ -222,13 +222,23 @@ export default class Base {
     }
 
     static verifyIfElementNotEmpty(element, index = undefined, scrollIntoView = false) {
-            this.getElement(element, index, scrollIntoView)
-                .should('not.be.empty', { timeout: Cypress.env('global_timeout') });
+        this.getElement(element, index, scrollIntoView)
+            .should('not.be.empty', { timeout: Cypress.env('global_timeout') });
+    }
+
+    static verifyIfElementIsEmpty(element, index = undefined, scrollIntoView = false) {
+        this.getElement(element, index, scrollIntoView)
+            .should('to.be.empty', { timeout: Cypress.env('global_timeout') });
+    }
+
+    static verifyStringQuantidadeCaracteres(elementInput, quantidade, index = undefined, scrollIntoView = false) {
+        this.getElement(elementInput, index, scrollIntoView)
+            .invoke('val').its("length").should("eq", quantidade);
     }
 
     static verifyIfElementByXPathNotEmpty(element, index = undefined, scrollIntoView = false) {
-            this.getElementByXPath(element, index, scrollIntoView)
-                .should('not.be.empty', { timeout: Cypress.env('global_timeout') });
+        this.getElementByXPath(element, index, scrollIntoView)
+            .should('not.be.empty', { timeout: Cypress.env('global_timeout') });
     }
 
     static selectOption(element, option, index = undefined, scrollIntoView = false) {

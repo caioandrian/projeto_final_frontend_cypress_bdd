@@ -1,9 +1,7 @@
 /// <reference types="cypress" />
 
-//importando métodos básicos
 import Base from '../base_page'
 
-// elementos da página
 const el = require('./elements').ELEMENTS;
 
 export class ListaProdutos extends Base{
@@ -14,9 +12,12 @@ export class ListaProdutos extends Base{
     }
 
     static validaConteudoDaPagina(conteudo) {
-        if(conteudo === 'lista_de_produtos')
-            super.validateElementLenght(el.PAGINA.ARRAY_PRODUTOS, 1, ">=")
-        else
-            super.validateTextElement(el.PAGINA.MSG_ERRO, conteudo)
+        if(conteudo)
+            super.validateElementLenght(el.PAGINA.ARRAY_PRODUTOS, 1, ">=")     
+    }
+
+    static validaMensagemResultadoDaBusca(mensagem) {
+        if(mensagem)
+            super.validateTextElement(el.PAGINA.MSG_ERRO, mensagem)
     }
 }

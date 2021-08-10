@@ -1,12 +1,11 @@
 /// <reference types="cypress" />
 import {Given, When, Then, Before, And} from 'cypress-cucumber-preprocessor/steps'
 
-//páginas
 import {Head} from '../../pages/head_page'
 import {Home} from '../../pages/home'
 import {Checkout} from '../../pages/checkout'
 
-Given(`que esteja na página home da loja manetzeetech`, () => {
+Given(`que esteja na página home`, () => {
     Head.acessar_site()
 })
 
@@ -16,7 +15,7 @@ Given(`que tenha ao menos um produto adicionado ao carrinho`, () => {
     Home.adicionarNoCarrinho();
 })
 
-Given(`seja um cliente PF da manetzeetech`, () => {
+Given(`seja um cliente PF`, () => {
     let usuario = Checkout.gerarNovoUsuarioPF()
     cy.wrap(usuario).as('usuario_criado')
 })

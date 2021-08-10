@@ -32,32 +32,22 @@
         "steps": [
           {
             "arguments": [],
-            "keyword": "Dado ",
-            "line": 10,
-            "name": "que esteja na página home da loja manetzeetech",
-            "result": {
-              "status": "passed",
-              "duration": 3818000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "Quando ",
             "line": 14,
             "name": "visualizar a seção \"o que os clientes estão dizendo\"",
             "result": {
-              "status": "passed",
-              "duration": 27000000
+              "status": "failed",
+              "duration": 30136000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `//h2[text()='O QUE OS CLIENTES ESTÃO DIZENDO']//following-sibling::div/div/ul`, but never found it.\n    at Function.getElementByXPath (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:660:40)\n    at Function.visualizarDepoimentosEmDestaque (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:1527:96)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:251:14)\n    at Context.resolveAndRunStepDefinition (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:12303:29)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:11624:35)"
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
             "line": 15,
-            "name": "deverá ser exibido pelo menos um depoimento do cliente manetzeetech",
+            "name": "deverá ser exibido pelo menos um depoimento do cliente",
             "result": {
-              "status": "passed",
-              "duration": 43000000
+              "status": "skipped"
             }
           }
         ]
@@ -65,7 +55,7 @@
       {
         "id": "depoimentos;ver-todos-os-depoimentos",
         "keyword": "Scenario",
-        "line": 19,
+        "line": 18,
         "name": "Ver todos os depoimentos",
         "tags": [
           {
@@ -74,39 +64,29 @@
           },
           {
             "name": "@ver_depoimentos",
-            "line": 18
+            "line": 17
           }
         ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Dado ",
-            "line": 10,
-            "name": "que esteja na página home da loja manetzeetech",
-            "result": {
-              "status": "passed",
-              "duration": 1066000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "Quando ",
-            "line": 20,
+            "line": 19,
             "name": "acessar a página de depoimentos",
             "result": {
-              "status": "passed",
-              "duration": 14958000000
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `//h2[text()='O QUE OS CLIENTES ESTÃO DIZENDO']//following-sibling::div/div/ul/li`, but never found it.\n    at Function.getElementByXPath (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:656:37)\n    at Function.acessarPaginaDepoimentos (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:1541:96)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:254:14)\n    at Context.resolveAndRunStepDefinition (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:12303:29)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:11624:35)"
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
-            "line": 21,
-            "name": "deverão ser exibidos todos os \"Depoimentos\" cadastrados pelos clientes da loja manetzeetech",
+            "line": 20,
+            "name": "deverão ser exibidos todos os \"Depoimentos\" cadastrados pelos clientes",
             "result": {
-              "status": "passed",
-              "duration": 97000000
+              "status": "skipped"
             }
           }
         ]
@@ -114,7 +94,7 @@
       {
         "id": "depoimentos;cadastrar-um-novo-depoimento",
         "keyword": "Scenario",
-        "line": 31,
+        "line": 29,
         "name": "Cadastrar um novo depoimento",
         "tags": [
           {
@@ -123,49 +103,37 @@
           },
           {
             "name": "@ver_depoimentos",
-            "line": 23
+            "line": 22
           }
         ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Dado ",
-            "line": 10,
-            "name": "que esteja na página home da loja manetzeetech",
-            "result": {
-              "status": "passed",
-              "duration": 4154000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "Quando ",
-            "line": 25,
+            "line": 24,
             "name": "acessar a página de depoimentos",
             "result": {
-              "status": "passed",
-              "duration": 7377000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `//h2[text()='O QUE OS CLIENTES ESTÃO DIZENDO']//following-sibling::div/div/ul/li`, but never found it.\n    at Function.getElementByXPath (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:656:37)\n    at Function.acessarPaginaDepoimentos (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:1541:96)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:254:14)\n    at Context.resolveAndRunStepDefinition (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:12303:29)\n    at Context.eval (https://lojadetestetemanetzeetech.commercesuite.com.br/__cypress/tests?p=cypress\\integration\\spec\\depoimentos.feature:11624:35)"
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
-            "line": 26,
-            "name": "cadastrar um novo depoimento usando credenciais \"inválidas\" no site da manetzeetech",
+            "line": 25,
+            "name": "cadastrar um novo depoimento usando credenciais \"inválidas\" no site",
             "result": {
-              "status": "passed",
-              "duration": 653000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
-            "line": 27,
+            "line": 26,
             "name": "deverá retornar a mensagem \"de erro\"",
             "result": {
-              "status": "passed",
-              "duration": 23000000
+              "status": "skipped"
             }
           }
         ]

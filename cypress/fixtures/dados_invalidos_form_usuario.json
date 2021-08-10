@@ -1,0 +1,70 @@
+{
+    "nome_completo": 
+        [
+            {
+                "tipo_erro": "vazio",
+                "valor": "", 
+                "resultado_esperado": "Digite o seu nome completo, por favor."
+            },
+            {
+                "tipo_erro": "incompleto",
+                "valor": "Caio", 
+                "resultado_esperado": "Digite o seu nome completo, por favor."
+            },
+            {
+                "tipo_erro":"com numeros",
+                "valor": "678 999", 
+                "resultado_esperado": ""
+            },
+            {
+                "tipo_erro": "caracteres_especiais",
+                "valor": "C*¨\\.;´~~!?--_ Santos", 
+                "resultado_esperado": ""
+            }
+        ]
+    ,
+    "cpf": {
+        "vazio": {
+            "valor": "", 
+            "resultado_esperado": "Para prosseguir com o cadastro, por favor, informe um CPF válido."
+        },
+        "invalido":  {
+            "valor": "12364387563", 
+            "resultado_esperado": "CPF inválido! Por favor, digite um número válido."
+        },
+        "quantidade_insuficiente" : {
+            "valor": "49563", 
+            "resultado_esperado":  "CPF inválido! Por favor, digite um número válido."
+        },
+        "com_letras": {
+            "valor": "abcdefghijklmnop", 
+            "resultado_esperado": "O campo deve remover as letras automaticamente."
+        },
+        "quantidade_acima_do_permitido": {
+            "valor": "45077280029999999999",
+            "resultado_esperado": "O campo deve remover os dígitos em excesso automaticamente."
+        }
+    },
+    "celular": {
+        "vazio": {
+            "valor": "",
+            "resultado_esperado": "Informe pelo menos um número de telefone"
+        },
+        "invalido":  {
+            "valor": "4411111111", 
+            "resultado_esperado": "Telefone"
+        },
+        "quantidade_insuficiente" : {
+            "valor": "49563", 
+            "resultado_esperado":  "O telefone deve ter 10 digitos DDD + telefone!"
+        },
+        "com_letras": {
+            "valor": "abcdefghijklmn", 
+            "resultado_esperado": "O campo deve remover as letras automaticamente."
+        },
+        "quantidade_acima_do_permitido": {
+            "valor": "449998451680000000",
+            "resultado_esperado": "O campo deve remover os dígitos em excesso automaticamente."
+        }
+    }
+}

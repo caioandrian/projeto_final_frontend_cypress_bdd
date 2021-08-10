@@ -2,13 +2,13 @@
 
 @funcionalidade_pedido
 Funcionalidade: Pedido 
-    Como cliente do site manetzeetech
+    Como cliente do site
     Quero finalizar pedidos de compra no site
 
     Contexto: 
-        Dado que esteja na página home da loja manetzeetech
+        #Dado que esteja na página home
         E que tenha ao menos um produto adicionado ao carrinho
-        E seja um cliente PF da manetzeetech
+        E seja um cliente PF
         E tenha acessado a página de checkout
 
     @pedido_finalizar_pedido

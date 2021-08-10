@@ -28,3 +28,10 @@ Cypress.Commands.add('stepNotImplemented', () => {
     console.log('O step não foi implementado!')
     cy.log('O step não foi implementado!')
 })
+
+Cypress.Commands.overwrite('type', (originalFn, subject, str, options) => {
+    if (str !== '') {
+        return originalFn(subject, str, options)
+    }
+    return subject
+})

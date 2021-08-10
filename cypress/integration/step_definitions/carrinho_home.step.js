@@ -1,13 +1,10 @@
 /// <reference types="cypress" />
 import {Given, When, Then, Before, And} from 'cypress-cucumber-preprocessor/steps'
 
-//páginas
 import {Head} from '../../pages/head_page'
 import {Home} from '../../pages/home'
-//import {Carrinho} from '../../pages/carrinho'
 
-//background / contexto
-Given(`que esteja na página home da loja manetzeetech`, () => {
+Given(`que esteja na página home`, () => {
     Head.acessar_site()
 })
 

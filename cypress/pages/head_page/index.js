@@ -1,9 +1,7 @@
 /// <reference types="cypress" />
 
-//importando métodos básicos
 import Base from '../base_page'
 
-// elementos da página
 const el = require('./elements').ELEMENTS;
 
 export class Head extends Base{
@@ -22,7 +20,6 @@ export class Head extends Base{
     }
 
     static pesquisarProdutoPorString(texto) {
-        //super.getElement(el.HEAD.CAMPO_BUSCA).eq(1).type(`${texto}{enter}`)
         super.getElement(el.HEAD.CAMPO_BUSCA).eq(1).type(texto)
         super.clickOnElement(el.HEAD.BTN_BUSCAR)
     }

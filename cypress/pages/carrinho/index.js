@@ -1,9 +1,7 @@
 /// <reference types="cypress" />
 
-//importando métodos básicos
 import Base from '../base_page'
 
-// elementos da página
 const el = require('./elements').ELEMENTS;
 
 export class Carrinho extends Base{

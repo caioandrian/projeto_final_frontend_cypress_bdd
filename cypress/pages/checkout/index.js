@@ -1,11 +1,9 @@
 /// <reference types="cypress" />
 
-//importando métodos básicos
 import Base from '../base_page'
 
 import {Factory} from '../../fixtures/factory'
 
-// elementos da página
 const el = require('./elements').ELEMENTS;
 
 export class Checkout extends Base{

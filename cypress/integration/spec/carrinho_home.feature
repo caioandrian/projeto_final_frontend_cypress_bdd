@@ -2,12 +2,12 @@
 
 @funcionalidade_carrinho
 Funcionalidade: Visualização Rápida do Carrinho
-    Como cliente do site manetzeetech
+    Como cliente do site
     Quero adicionar items no meu carrinho
     e editar os produtos dentro dele usando a janela lateral na página home
 
     Contexto: 
-        Dado que esteja na página home da loja manetzeetech
+        Dado que esteja na página home
 
     @carrinho_adicionar_produtos
     Esquema do Cenario: Adicionar Produto(s) no Carrinho

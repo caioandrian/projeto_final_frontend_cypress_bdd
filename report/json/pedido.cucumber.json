@@ -1,6 +1,6 @@
 [
   {
-    "description": "    Como cliente do site manetzeetech\n    Quero finalizar pedidos de compra no site",
+    "description": "    Como cliente do site\n    Quero finalizar pedidos de compra no site",
     "keyword": "Funcionalidade",
     "name": "Pedido",
     "line": 4,
@@ -34,10 +34,10 @@
             "arguments": [],
             "keyword": "Dado ",
             "line": 9,
-            "name": "que esteja na página home da loja manetzeetech",
+            "name": "que esteja na página home",
             "result": {
               "status": "passed",
-              "duration": 5350000000
+              "duration": 5862000000
             }
           },
           {
@@ -47,17 +47,17 @@
             "name": "que tenha ao menos um produto adicionado ao carrinho",
             "result": {
               "status": "passed",
-              "duration": 715000000
+              "duration": 949000000
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
             "line": 11,
-            "name": "seja um cliente PF da manetzeetech",
+            "name": "seja um cliente PF",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 27000000
             }
           },
           {
@@ -67,7 +67,7 @@
             "name": "tenha acessado a página de checkout",
             "result": {
               "status": "passed",
-              "duration": 8487000000
+              "duration": 15720000000
             }
           },
           {
@@ -77,7 +77,7 @@
             "name": "preencher todas as informações úteis para que seja feito o pedido",
             "result": {
               "status": "passed",
-              "duration": 14795000000
+              "duration": 18041000000
             }
           },
           {
@@ -87,7 +87,7 @@
             "name": "deverá registrado o pedido do cliente",
             "result": {
               "status": "passed",
-              "duration": 5148000000
+              "duration": 5622000000
             }
           }
         ]

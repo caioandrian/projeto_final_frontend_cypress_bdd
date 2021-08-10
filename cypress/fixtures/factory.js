@@ -14,10 +14,27 @@ export class Factory{
                 return {
                     nome: faker.name.firstName(),
                     sobrenome: faker.name.lastName(),
-                    email: faker.internet.email().toLowerCase(),
+                    email: `${faker.internet.email().toLowerCase()}`,
                     senha: `${faker.internet.password()}_9`,
                     cpf: fakerbr.br.cpf(),
-                    celular: (cel.replace(['+55', '(', ')', '-'], ["", "", "", ""])).replace(cel.substr(0,4), "449828")
+                    celular: "44999845168"
+                }
+            
+            case 'cadastroVálido':
+                return {
+                    nome: faker.name.firstName(),
+                    sobrenome: faker.name.lastName(),
+                    email: `${faker.internet.email().toLowerCase()}_test`,
+                    senha: `${faker.internet.password()}_9`,
+                    cpf: fakerbr.br.cpf(),
+                    celular: "44999845168"
+                }
+
+            case 'cadastroInválido':
+                return {
+                    nome: "Caio",
+                    email: "qualquer@",
+                    senha: "qualquer"
                 }
         }
     }
