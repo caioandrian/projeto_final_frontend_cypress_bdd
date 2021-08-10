@@ -1,7 +1,7 @@
 # projeto_final_frontend_cypress_bdd
  projeto de capacitação
 
-#### Site (E-Commerce):
+#### Site:
 - https://lojadetestetemanetzeetech.commercesuite.com.br/
 
 <br/>
@@ -79,21 +79,23 @@ Download do docker no site https://www.docker.com/products/docker-desktop
 
 Criar uma imagem do seu projeto: 
 
->> docker build -t nome_da_imagem . 
+> docker build -t nome_da_imagem . 
 
->> Ou criar imagem e executar um container com uma saída http: 
+Ou criar imagem e executar um container com uma saída http: 
 
->> docker container run -d -p 8082:80 nome_imagem (acessar localhost:8082:80)
+> docker container run -d -p 8082:80 nome_imagem (acessar localhost:8082:80)
 
 <br/>
 
-Criar um container: 
+Criar e executar um container: 
 
->> docker run -it --name primeiro-container nome_da_imagem
+> docker run -it --name primeiro-container nome_da_imagem
 
->> com tags: docker run --rm -it –e tags=@funcionalidade_depoimentos -v %cd%:/usr/src/e2e nome_da_imagem
+com tags:
+> docker run --rm -it –e tags=@funcionalidade_depoimentos -v %cd%:/usr/src/e2e nome_da_imagem
 
->> no linux: trocar de %cd% para %pwd% (esse comando com tags precisa ser avaliado)
+no linux:
+> trocar de %cd% para %pwd% (esse comando com tags precisa ser avaliado)
 
 <br/>
 
