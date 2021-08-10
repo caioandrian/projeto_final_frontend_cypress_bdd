@@ -75,9 +75,9 @@
 <br/>
 
 **Como rodar o teste usando o Docker Localmente**
-> Download no site https://www.docker.com/products/docker-desktop
+Download do docker no site https://www.docker.com/products/docker-desktop
 
-> Criar uma imagem do seu projeto: 
+Criar uma imagem do seu projeto: 
 
 >> docker build -t nome_da_imagem . 
 
@@ -87,7 +87,7 @@
 
 <br/>
 
-> Criar um container: 
+Criar um container: 
 
 >> docker run -it --name primeiro-container nome_da_imagem
 
@@ -106,31 +106,31 @@
 
 > docker container ls 
 
->> docker container exec -it <id_container> bash 
+> docker container exec -it <id_container> bash 
 
 <br/>
 
-> Copiar chave de acesso Jenkins
+Copiar chave de acesso Jenkins
 
->> cat /var/jenkins_home/secrets/initialAdminPassword 
+> cat /var/jenkins_home/secrets/initialAdminPassword 
 
-> Acessar a página: https://localhost:8080
+Acessar a página: https://localhost:8080
 
 > Colar a chave de acesso do Jenkins
 
 <br/>
 
-> Instalar plugins recomendados + plugin Docker Pipeline e cucumber reports
+Instalar plugins recomendados + plugin Docker Pipeline e cucumber reports
 
-> Configurar a PIPELINE do Jenkins: Pipeline script from SCM
+Configurar a PIPELINE do Jenkins: Pipeline script from SCM
 
->> SCM -> GIT
+> SCM -> GIT
 
->> Adicionar credenciais do git para usar o repositório que está nele. 
+> Adicionar credenciais do git para usar o repositório que está nele. 
 
 <br/>
 
-> Como usar o Jenkins com tags: (precisa ser testado)
+Como usar o Jenkins com tags: (precisa ser testado)
 
 Jenkinsfile
 
