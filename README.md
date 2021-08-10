@@ -4,6 +4,8 @@
 #### Site (E-Commerce):
 - https://lojadetestetemanetzeetech.commercesuite.com.br/
 
+<br/>
+
 ### ---- Lista de Funcionalidades ----
 
 **Produto**
@@ -28,6 +30,8 @@
 - Ver Todos
 - Cadastrar **(esquema de cenário)** **(com intercept - não finalizado)** 
 
+<br/>
+
 ### ---- Diferenciais no projeto ----
 
 ##### Page Object:
@@ -42,6 +46,8 @@
 - sim (validação de erros autenticação)
 ##### Dockerfile & Jenkinsfile:
 - rodando localmente (mas pode apresentar erro no site "403 Access Forbidden by CSRFProtector!")
+
+<br/>
 
 ### ---- Lista de dependências ----
 
@@ -65,3 +71,73 @@
 
 **Gerar reports html a partir do report json**
 > npm run cy:report
+
+<br/>
+
+**Como rodar o teste usando o Docker Localmente**
+> Download no site https://www.docker.com/products/docker-desktop
+
+> Criar uma imagem do seu projeto: docker build -t nome_da_imagem . 
+
+>> Executar o container com uma saída http: docker container run -d -p 8082:80 nome_imagem (acessar localhost:8082:80)
+
+
+> No cmd/terminal: docker run -it --name primeiro-container nome_da_imagem
+
+>> com tags: docker run --rm -it –e tags=@funcionalidade_depoimentos -v %cd%:/usr/src/e2e nome_da_imagem
+>> no linux: trocar de %cd% para %pwd% (esse comando com tags precisa ser avaliado)
+
+<br/>
+
+**Como rodar o teste usando o Docker Pipeline + Jenkins Localmente**
+> docker network create jenkins
+
+> docker container run  --name jenkins-blueocean --rm --detach ^   --network jenkins --env DOCKER_HOST=tcp://docker:2376 ^   --env DOCKER_CERT_PATH=/certs/client --env DOCKER_TLS_VERIFY=1 ^   --volume jenkins-data:/var/jenkins_home ^   --volume jenkins-docker-certs:/certs/client:ro ^   --publish 8080:8080 --publish 50000:50000 jenkinsci/blueocean
+
+> docker container run  --name jenkins-docker --rm --detach ^   --privileged --network jenkins --network-alias docker ^   --env DOCKER_TLS_CERTDIR=/certs ^   --volume jenkins-docker-certs:/certs/client ^   --volume jenkins-data:/var/jenkins_home ^   docker:dind
+
+> docker container ls 
+>> docker container exec -it <id_container> bash 
+
+> Copiar chave de acesso Jenkins
+>> cat /var/jenkins_home/secrets/initialAdminPassword 
+
+> Acessar a página: https://localhost:8080
+
+> Colar a chave de acesso do Jenkins
+
+> Instalar plugins recomendados + plugin Docker Pipeline e cucumber reports
+
+> Configurar a PIPELINE do Jenkins: Pipeline script from SCM
+>> SCM -> GIT
+
+>> Adicionar credenciais do git para usar o repositório que está nele. 
+
+> Usar Jenkins com tags:
+
+Jenkinsfile
+
+    {
+        stage('Tests'){ 
+            steps{ 
+                sh "npm run cucumber TAGS=$tags" 
+            } 
+        } 
+    }
+
+cypress.json - script test
+
+    {
+        "cucumber": "cucumber-cypress-tags run -e" 
+    }
+
+No Jenkins configurar a pipeline com: "Este build é parametrizado"
+> Nome: tags
+
+> Escolhas:
+
+    {
+        @tag1
+        @tag2
+        @tag3
+    }
