@@ -75,25 +75,27 @@
 <br/>
 
 **Como rodar o teste usando o Docker Localmente**
-> Download no site https://www.docker.com/products/docker-desktop
+Download do docker no site https://www.docker.com/products/docker-desktop
 
-> Criar uma imagem do seu projeto: 
+Criar uma imagem do seu projeto: 
 
->> docker build -t nome_da_imagem . 
+> docker build -t nome_da_imagem . 
 
->> Ou criar imagem e executar um container com uma saída http: 
+Ou criar imagem e executar um container com uma saída http: 
 
->> docker container run -d -p 8082:80 nome_imagem (acessar localhost:8082:80)
+> docker container run -d -p 8082:80 nome_imagem (acessar localhost:8082:80)
 
 <br/>
 
-> Criar um container: 
+Criar e executar um container: 
 
->> docker run -it --name primeiro-container nome_da_imagem
+> docker run -it --name primeiro-container nome_da_imagem
 
->> com tags: docker run --rm -it –e tags=@funcionalidade_depoimentos -v %cd%:/usr/src/e2e nome_da_imagem
+com tags:
+> docker run --rm -it –e tags=@funcionalidade_depoimentos -v %cd%:/usr/src/e2e nome_da_imagem
 
->> no linux: trocar de %cd% para %pwd% (esse comando com tags precisa ser avaliado)
+no linux:
+> trocar de %cd% para %pwd% (esse comando com tags precisa ser avaliado)
 
 <br/>
 
@@ -106,31 +108,31 @@
 
 > docker container ls 
 
->> docker container exec -it <id_container> bash 
+> docker container exec -it <id_container> bash 
 
 <br/>
 
-> Copiar chave de acesso Jenkins
+Copiar chave de acesso Jenkins
 
->> cat /var/jenkins_home/secrets/initialAdminPassword 
+> cat /var/jenkins_home/secrets/initialAdminPassword 
 
-> Acessar a página: https://localhost:8080
+Acessar a página: https://localhost:8080
 
 > Colar a chave de acesso do Jenkins
 
 <br/>
 
-> Instalar plugins recomendados + plugin Docker Pipeline e cucumber reports
+Instalar plugins recomendados + plugin Docker Pipeline e cucumber reports
 
-> Configurar a PIPELINE do Jenkins: Pipeline script from SCM
+Configurar a PIPELINE do Jenkins: Pipeline script from SCM
 
->> SCM -> GIT
+> SCM -> GIT
 
->> Adicionar credenciais do git para usar o repositório que está nele. 
+> Adicionar credenciais do git para usar o repositório que está nele. 
 
 <br/>
 
-> Como usar o Jenkins com tags: (precisa ser testado)
+Como usar o Jenkins com tags: (precisa ser testado)
 
 Jenkinsfile
 
