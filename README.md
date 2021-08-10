@@ -1,7 +1,7 @@
 # projeto_final_frontend_cypress_bdd
  projeto de capacitação
 
-#### Site (E-Commerce):
+#### Site:
 - https://lojadetestetemanetzeetech.commercesuite.com.br/
 
 <br/>
