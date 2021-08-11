@@ -5,9 +5,6 @@ import {Head} from '../../pages/head_page'
 import {Home} from '../../pages/home'
 import {Checkout} from '../../pages/checkout'
 
-Given(`que esteja na página home`, () => {
-    Head.acessar_site()
-})
 
 Given(`que tenha ao menos um produto adicionado ao carrinho`, () => {
     Home.selecionarProduto(1)

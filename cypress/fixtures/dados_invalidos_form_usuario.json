@@ -21,8 +21,7 @@
                 "valor": "C*¨\\.;´~~!?--_ Santos", 
                 "resultado_esperado": ""
             }
-        ]
-    ,
+        ],
     "cpf": {
         "vazio": {
             "valor": "", 

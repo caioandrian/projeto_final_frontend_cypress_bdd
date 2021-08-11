@@ -12,46 +12,45 @@ export class Home extends Base{
         super.getElementByXPath(el.PAGINA.XPATH_PRODUTOS_DESTAQUES, 0, true).click()
     }
 
-    static editarVariantesDoProduto(quantidade = 1, operador = ""){
-        
+    static adicionarProdutosNoCarrinho(quantidadeDeProdutos, qtdeDeitemsDoMesmoProduto = 1, operador = ">"){
+        for (let i = 1; i <= quantidadeDeProdutos; i ++){
+            this.selecionarProduto(i - 1)
+            this.selecionarVariantesDoProduto(qtdeDeitemsDoMesmoProduto, operador)
+            this.adicionarNoCarrinho();
+
+            if(i < quantidadeDeProdutos)
+                this.carrinhoContinuarComprando()
+        }
+    }
+
+    static selecionarVariantesDoProduto(qtdeDeitemsDoMesmoProduto = 1, operador = ">"){
         //SELECIONAR VARIANTES DO MESMO (COR, TAMANHO, VOLTAGEM.. ETC)
-        if(super.getElement(el.POPUP_INFO_PROD.ARRAY_BOX_VARIANTES)
+        super.getElement(el.POPUP_INFO_PROD.ARRAY_BOX_VARIANTES)
             .then((elem) => {
+                let qtdeElementosDentroDaBox = elem.length
 
-                //VERIFICA SE A DIV QUE CONTÉM AS VARIANTES ESTÁ APRESENTANDO SELETORES PARA ESCOLHA
-                //APENAS UM SELETOR
-                if(elem.length === 3){
-                    super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, 0).then((seletor2) => {
-                        let valorOption = seletor2[0][2].outerText
-                        super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 0)
-                    })
-                }
+                if(qtdeElementosDentroDaBox >= 3){
+                    let indexDoSeletor = 0
+                    for(let i = 3; i < qtdeElementosDentroDaBox; i++){
 
-                //DOIS SELETORES
-                if(elem.length === 4){
-                    super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, 1).then((seletor2) => {
-                        let valorOption = seletor2[0][2].outerText
-                        super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 1)
-                    })
-                }
-
-                //TRÊS SELETORES
-                if(elem.length >= 5){
-                    super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, 2).then((seletor2) => {
-                        let valorOption = seletor2[0][2].outerText
-                        super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 1)
-                    })
+                        //SELECIONA UMA OPÇÃO NO SELECT DA VARIANTE
+                        super.getElement(el.POPUP_INFO_PROD.SELECT_VARIANTES, indexDoSeletor).then((seletor2) => {
+                            let valorOption = seletor2[0][2].outerText
+                            super.selectOption(el.POPUP_INFO_PROD.SELECT_VARIANTES, valorOption, 0)
+                        })
+                        indexDoSeletor++
+                    }
                 }
             })
-        )
         
         //ADICIONAR MAIS ITEMS DO MESMO PRODUTO
-        if(quantidade >= 1){
-            for(let i = 1; i < quantidade; i++)
+        if(qtdeDeitemsDoMesmoProduto >= 1){
+            for(let i = 1; i < qtdeDeitemsDoMesmoProduto; i++){
                 if(operador === ">")
                     super.clickOnElement(el.POPUP_INFO_PROD.AUMENTAR_QTDE)
                 else
                     super.clickOnElement(el.POPUP_INFO_PROD.DIMINUIR_QTDE)
+            }
         }
     }
 

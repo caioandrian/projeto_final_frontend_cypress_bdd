@@ -5,9 +5,6 @@ import {Head} from '../../pages/head_page'
 import {Home} from '../../pages/home'
 import {ListaProdutos} from '../../pages/lista_produtos'
 
-Given(`que esteja na página home`, () => {
-    Head.acessar_site()
-})
 
 When(`procurar um produto por {string}`, (texto) => {
     Head.pesquisarProdutoPorString(texto)

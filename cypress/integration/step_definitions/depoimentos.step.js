@@ -5,9 +5,6 @@ import {Head} from '../../pages/head_page'
 import {Home} from '../../pages/home'
 import {Depoimentos} from '../../pages/depoimentos'
 
-Given(`que esteja na página home`, () => {
-    Head.acessar_site()
-})
 
 When(`visualizar a seção {string}`, (secao) => {
     Home.visualizarDepoimentosEmDestaque()
