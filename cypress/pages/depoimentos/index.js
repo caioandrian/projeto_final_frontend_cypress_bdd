@@ -16,54 +16,67 @@ export class Depoimentos extends Base{
         super.validateElementLenght(el.PAGINA.DEPOIMENTOS, 1, ">=")
     }
 
+    static validaMensagem(msg) { 
+        if(msg === 'de erro'){
+            super.validateTextElement(el.FORM_DEPOIMENTO.MSG_ERRO_NOME, "Por favor, informe seu nome completo")
+            super.validateTextElement(el.FORM_DEPOIMENTO.MSG_ERRO_EMAIL, "Por favor, informe seu e-mail")
+            super.validateTextElement(el.FORM_DEPOIMENTO.MSG_ERRO_DEPOIMENTO, "Por favor, escreva uma mensagem no seu depoimento.")
+        }
+    }
+
     static cadastrarDepoimento(tipo){
         super.clickOnElement(el.PAGINA.BTN_CADASTRAR_DEPOIMENTO, 0, true);
         super.verifyIfElementIsVisibleByXPatch(el.FORM_DEPOIMENTO.XPATH_POPUP_CADASTRO)
 
-        //Por favor, informe seu nome completo
-        //Por favor, informe seu e-mail
-        //Por favor, escreva uma mensagem no seu depoimento.
-
         if(tipo === 'inválidas'){
             super.clickOnModalByXPath_and_elementInside(el.FORM_DEPOIMENTO.XPATH_POPUP_CADASTRO, el.FORM_DEPOIMENTO.BTN_ENVIAR);
-            super.verifyIfElementIsVisible(el.FORM_DEPOIMENTO.MSG_ERRO_NOME)
-            super.verifyIfElementIsVisible(el.FORM_DEPOIMENTO.MSG_ERRO_EMAIL)
-            super.verifyIfElementIsVisible(el.FORM_DEPOIMENTO.MSG_ERRO_DEPOIMENTO)
-        }
+        }else{
+            //GET https://lojadetestetemanetzeetech.commercesuite.com.br/depoimentos-de-clientes
 
-        //TODO: CADASTRO USANDO INTERCEPT
-         // cy.intercept(method, url, staticResponse)
+            /*let body = {
+                nome_depoimento: "Tester",
+                email_depoimento: "tester.santos@outook.com.br",
+                nota_depoimento: "1",
+                msg_depoimento: "Ótimo atendimento! Vocês estão de parabéns"
+            }*/
 
-         //GET https://lojadetestetemanetzeetech.commercesuite.com.br/depoimentos-de-clientes
-
-         //POST https://bam-cell.nr-data.net/events/1/NRBR-b4cc0fea5465368d898?a=438977010,439463578&v=1210.e2a3f80&to=NQBQMhcCD0MDARZcWgxKcRMWFw5dTU0%3D&rst=12799&ck=1&ref=https://lojadetestetemanetzeetech.commercesuite.com.br/depoimentos-de-clientes
-
-        /*cy.intercept(
-            'POST',
-            'https://bam-cell.nr-data.net/events/1/NRBR-b4cc0fea5465368d898?a=438977010,439463578&v=1210.e2a3f80&to=NQBQMhcCD0MDARZcWgxKcRMWFw5dTU0%3D&rst=12799&ck=1&ref=https://lojadetestetemanetzeetech.commercesuite.com.br/depoimentos-de-clientes',
-            {
-                //resposta
-                statusCode: 200,
-                body: {
-                    message: 'OLHAAAAAA',
-                    result: ['my-data']
+            cy.intercept(
+                'POST',
+                '/loja/funcoes/envia_depoimento.php?loja=*&transID=*',
+                {
+                    statusCode: 200,
+                    body: {
+                        message: 'Depoimento enviado com sucesso!'
+                    }
                 }
-            }
-        ).as('response')*/
+            ).as('response')
+
+            /*cy.intercept(
+                'POST',
+                '/loja/funcoes/envia_depoimento.php?loja=*&transID=*',
+                (req) => {
+                    //req.body = "nome_depoimento=Tester&email_depoimento=tester.santos@outook.com.br&nota_depoimento=1&msg_depoimento=Otimo!!!&g-recaptcha-response=03AGdBq26FA_aFSFZsgRACJSGi5KOC6Nqu4JLqQSaQWTqeuXY0cNd_RHwZV1eENHtSwfKVhdqVwLadWbA5443jQi1y0jM8LhpdFXqX54Dd0fbIn53AvCEYqeCDOcJztUDVCiXWI14VEuk0aV"
+
+                    req.reply({
+                        statusCode: 200,
+                        body: {
+                            message: 'Depoimento enviado com sucesso!'
+                        }
+                    })
+                    //req.redirect('/depoimentos-de-clientes', 301)
+                }
+            ).as('response')*/
+
+            cy.get(el.FORM_DEPOIMENTO.NOME).type('Otávio')
+            cy.get(el.FORM_DEPOIMENTO.EMAIL).type('oto@uol.com.br')
+            cy.get(el.FORM_DEPOIMENTO.TEXTO).type('Os melhores preços :D')
+            cy.get(el.FORM_DEPOIMENTO.BTN_ENVIAR).click();
         
-        /*cy.get(el.PAGINA.BTN_CADASTRAR_DEPOIMENTO).click();
-        cy.get(el.FORM_DEPOIMENTO.NOME).type('Gabriel Santos')
-        cy.get(el.FORM_DEPOIMENTO.EMAIL).type('gabriel@uol.com.br')
-        cy.get(el.FORM_DEPOIMENTO.TEXTO).type('Simplesmente incrível')
-        cy.get(el.FORM_DEPOIMENTO.BTN_ENVIAR).click();*/
-
-        // clicar no botão irá acessar os dados 
-        // do endpoint https://jsonplaceholder.typicode.com/todos/1
-
-        /*cy.wait('@response')
-        .then((interception) => {
-            console.log('interception', interception)
-        })*/
+            cy.wait('@response')
+              .then((interception) => {
+                  console.log('interception', interception)
+              })
+            
+        }
     }
-
 }

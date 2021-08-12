@@ -14,15 +14,8 @@ When(`acessar a página de depoimentos`, (secao) => {
     Home.acessarPaginaDepoimentos()
 })
 
-And(`cadastrar um novo depoimento no site`, () => {
-    Depoimentos.cadastrarDepoimento();
-})
-
 When(`cadastrar um novo depoimento usando credenciais {string} no site`, (tipo) => {
     Depoimentos.cadastrarDepoimento(tipo)
-
-    //TODO: CONCLUIR CADASTRO USANDO INTERCEPT
-    cy.stepNotImplemented()
 })
 
 Then(`deverá ser exibido pelo menos um depoimento do cliente`, () => {
@@ -30,7 +23,7 @@ Then(`deverá ser exibido pelo menos um depoimento do cliente`, () => {
 })
 
 Then(`deverá retornar a mensagem {string}`, (msg) => {
-    cy.stepNotImplemented()
+    Depoimentos.validaMensagem(msg)
 })
 
 Then(`deverão ser exibidos todos os {string} cadastrados pelos clientes`, (titulo) => {

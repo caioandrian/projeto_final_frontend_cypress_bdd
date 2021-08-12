@@ -11,9 +11,10 @@ export const ELEMENTS = {
         EMAIL: "#email_depoimento",
         CHECKBOX_AVALIAÇÃO: "input[name='nota_depoimento']",
         TEXTO: "#msg_depoimento",
-        BTN_ENVIAR: "button",
+        BTN_ENVIAR: "#depoimento > .botao-commerce",
         MSG_ERRO_NOME: "#nome_depoimento-error",
         MSG_ERRO_EMAIL: "#email_depoimento-error",
-        MSG_ERRO_DEPOIMENTO: "#msg_depoimento-error"
+        MSG_ERRO_DEPOIMENTO: "#msg_depoimento-error",
+        TXT_MSG_SUCESSO: "Depoimento enviado com sucesso!"
     }
 }

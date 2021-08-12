@@ -14,12 +14,12 @@ Funcionalidade: Depoimentos
         Quando visualizar a seção "o que os clientes estão dizendo"
         Então deverá ser exibido pelo menos um depoimento do cliente
 
-    @ver_depoimentos
+    @ver_todos_depoimentos
     Cenario: Ver todos os depoimentos
         Quando acessar a página de depoimentos
         Então deverão ser exibidos todos os "Depoimentos" cadastrados pelos clientes
 
-    @ver_depoimentos
+    @cadastrar_depoimentos
     Esquema do Cenario: Cadastrar um novo depoimento
         Quando acessar a página de depoimentos
         E cadastrar um novo depoimento usando credenciais "<status>" no site
@@ -27,5 +27,5 @@ Funcionalidade: Depoimentos
         Exemplos: 
             | status    | msg                             |
             | inválidas | de erro                         |
-            #| válidas   | Depoimento enviado com sucesso! |
+            | válidas   | Depoimento enviado com sucesso! |
         
