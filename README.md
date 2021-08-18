@@ -7,49 +7,49 @@
 <br/>
 
 ### ---- Lista de Funcionalidades ----
+<br/>
 
-**Produto**
-- Busca **(esquema de cenário)**
-- Categorias **(esquema de cenário)**
+- Busca Produto **(esquema de cenário)**
+- Produto por Categorias **(esquema de cenário)**
 - Ver Produto
 
-**Autenticação**
+<br/>
+
 - Login **(esquema de cenário)** 
 - Cadastro **(esquema de cenário)** **(com faker )** 
 
-**Carrinho**
-- Adicionar Produtos **(esquema de cenário)**
-- Remover Produto / Carrinho Vazio
+<br/>
+
+- Adicionar Produtos no Carrinho **(esquema de cenário)**
+- Remover Produto do Carrinho
 - Selecionar Quantidade
 
-**Pedido**
+<br/>
+
 - Finalizar Pedido (Boleto)
 
-**Depoimentos**
-- Em Destaques
-- Ver Todos
-- Cadastrar **(esquema de cenário)** **(com intercept - não finalizado)** 
+<br/>
+
+- Depoimentos em destaque
+- Ver todos depoimentos
+- Cadastrar depoimento **(esquema de cenário)** **(com intercept - não finalizado)** 
 
 <br/>
 
 ### ---- Diferenciais no projeto ----
+<br/>
 
-##### Page Object:
-- sim
-##### BDD / Gherkin:
-- sim
-##### Massa de Dados Dinâmicas (faker):
-- sim
-##### Com Intercept:
-- não (a fazer)
-##### Massa de Dados Fixas (json / cy.fixture):
-- sim (validação de erros autenticação)
-##### Dockerfile & Jenkinsfile:
-- rodando localmente (mas pode apresentar erro no site "403 Access Forbidden by CSRFProtector!")
+- Page Object
+- BDD / Gherkin
+- Massa de Dados Dinâmicas (faker)
+- Com Intercept
+- Massa de Dados Fixas (json / cy.fixture)
+- Dockerfile & Jenkinsfile
 
 <br/>
 
 ### ---- Lista de dependências ----
+<br/>
 
     { "cypress": "^8.0.0",
     "cypress-cucumber-preprocessor": "^4.1.3",
