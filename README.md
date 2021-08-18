@@ -1,5 +1,5 @@
-# projeto_final_frontend_cypress_bdd
- projeto de capacitação
+# Projeto Final Frontend
+Projeto da capacitação
 
 #### Site:
 - https://lojadetestetemanetzeetech.commercesuite.com.br/
